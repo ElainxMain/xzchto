@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://aif-s3.aif.ru/images/020/659/e55d9cbc15df2890ce5f8e802e3bb8ea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mashinka {
+    animation-name: ezda;
+    width: 200px;
+    height: 300px;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+
+    position: absolute; 
+    top: 100%;
+}
+
+@keyframes ezda {
+    from {
+        left: 0%;
+    }
+    to {
+        left: calc(100% - 200px - 50px);
+    }
+}
+
