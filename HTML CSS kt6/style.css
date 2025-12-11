@@ -1,0 +1,94 @@
+body{
+  margin:0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding:24px;
+  background-image: url("https://attachments-cdn-s.coub.com/coub_storage/coub/simple/cw_image/92e5144d99e/8d5235e45d368ebcacf17/1554235497_00031.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container{
+  max-width:100%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+}
+
+/* верхняя панель */
+.top{
+  padding:12px 18px;
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06);
+}
+.logo{
+    font-weight:700;
+    font-size:18px
+}
+.nav{
+    display:grid;
+    gap:12px;
+    margin-left:8px;
+    grid-template:
+    "nav nav nav nav nav nav nav nav" ;
+}
+.swaga{
+    background-color: gray;
+    height: 50px;
+}
+.swaga:hover{
+    background-color: blue;
+    color: wheat;
+}
+.search{
+    justify-self:end;
+    background:transparent;
+    border:1px solid #e6e9ec;
+    padding:8px 10px;
+    border-radius:4px;
+  }
+
+/* Большой квадрат (hero) */
+.first{
+  background:linear-gradient(180deg, #f7fafb 0%, #eef2f6 100%);
+  padding:36px;
+  min-height:200px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  box-shadow:0 2px 6px rgba(15,23,42,0.03);
+}
+.first h1{
+  margin:0;
+  font-size:28px;
+}
+.first img{
+  display: flex;
+  width: 900px;
+  justify-content: center;
+  height: 700px;
+}
+
+.row{
+  display:grid;
+}
+.cols-4{grid-template-columns:repeat(4,1fr)}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+.cols-2{grid-template-columns:repeat(2,1fr)}
+.cols-7{grid-template-columns:repeat(7,1fr)}
+
+.card{
+  border-radius:6px;
+  min-height:80px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.04);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+}
